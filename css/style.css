@@ -1,0 +1,96 @@
+.themecolor{
+    /* background: #b474a4; */
+    /* color: white; */
+    background-image: linear-gradient(to left,#480c39,#b474a4);
+}
+.nav-link{
+    color: white;
+    margin-left: 10px;
+}
+/* .nav-link:hover{
+    color: #f095d9;
+} */
+.SearchBtn{
+    background: #f095d9;
+    color: white;
+}
+.SearchBtn:hover{
+    background: #c046a2;
+}
+
+/* products banner style */
+.product-banner{
+    background: url('https://static.vecteezy.com/system/resources/thumbnails/004/299/813/small/online-shopping-on-phone-buy-sell-business-digital-web-banner-application-money-advertising-payment-ecommerce-illustration-search-vector.jpg');
+    height: 400px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:top;
+}
+.product-banner::before{
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: rgba(0, 0, 0, 0.6);
+}
+.banner-content{
+    position: relative;
+}
+
+/* Carousel indicator styling */
+.carousel-indicators [data-bs-target]{
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: #b955a2;
+}
+
+.carousel-indicators .active {
+    background-color: #5f054a;
+}
+
+/* COntact styling */
+.contactbtn{
+        border-radius: 0;
+    margin-top: 5px;
+    width: 227px;
+    display: block;
+    margin-left: 0;
+    margin-right: auto;
+    background: #d5ad54;
+    border: none;
+    
+}
+
+
+/* thank you section */
+.hero-section{
+    height: 100vh;
+    background: url('https://static.vecteezy.com/system/resources/thumbnails/004/243/185/small/presentation-page-template-thank-you-page-abstract-background-with-3d-balls-vector.jpg') no-repeat center center/cover;
+    position: relative;
+}
+.hero-section::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+.content-box{
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 10px 30px rgba(10, 177, 107, 0.9);
+}
+
+.line{
+    display: inline-block;
+    width: 40px;
+    height: 3px;
+    background: red;
+    margin-bottom:15px ;
+}
