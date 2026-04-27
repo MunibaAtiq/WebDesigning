@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQUERY Animation</title>
+    <style>
+      #box{
+        background-color: rgb(7, 110, 110);
+        height: 200px;
+        width: 200px;
+        position: relative;
+      }
+    </style>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="jquery.js"></script>
+</head>
+<body>
+  <p>Click on Left or Right button to see  the result : </p>
+  <div id="box"> This is Box</div>
+  <button id="right" class="btn btn-success">Right MOve</button>
+  <button id="left" class="btn btn-success">Left Move</button>
+
+  <button id="animationBtn" class="btn btn-outline-primary">Start animation</button>
+
+  <script>
+    $(document).ready(function(){
+        $('#right').click(function(){
+            $("#box").animate({left:'450px',width:'100px',height:'100px',opacity:0.2},3000);
+        });
+
+        $('#left').click(function(){
+            $("#box").animate({left:'0px',opacity:1.0},5000);
+        });
+
+        $('#animationBtn').mouseenter(function(){
+            $("#box").animate({left:'250px'},3000);
+            $("#box").animate({top:'100px'},3000);
+            $("#box").animate({left:'0px'},3000);
+            $("#box").animate({top:'0px'},3000);
+        });
+    });
+
+  </script>
+</body>
+</html>
