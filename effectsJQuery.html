@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Effects in JQUERY</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="jquery.js"></script>
+    <style>
+        div{
+            height: 50px;
+            width: 150px;
+            border: 1px solid black;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Effects in JQUERY</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi, consequatur.</p>
+    <div class="effect1">Click me to Hide</div>
+    <div class="effect2">Click me to Hide</div>
+    <button class="clicktoHide">click to hide</button>
+    <button class="clicktoSHow">click to show first div</button>
+    <button class="clicktoSHow2">click to show 2nd div</button>
+
+
+    <div id="box" style="background: skyblue;">This is box1</div>
+    <button id="boxBtn">Toggle Effect</button>
+
+    <!-- slide up slide down -->
+     <div id="box3"> Box 3 content</div>
+     <button id="hide">slide Up</button>
+     <button id="show">slide Down</button>
+
+     <button id="toggleEffect">Toggle Box3</button>
+
+    <script>
+        $(document).ready(function(){
+            $(".clicktoHide").click(function(){
+                $(".effect1").hide(1000);
+                $(".effect2").hide(1000);
+            });
+
+            $('.clicktoSHow').click(function(){
+                $(".effect1").show(1000);
+            });
+
+            $('.clicktoSHow2').click(function(){
+                $(".effect2").show(1000);
+            });
+
+            // toggle effect
+            $('#boxBtn').click(function(){
+                $('#box').fadeToggle(1000);
+            });
+
+            // slideup slide down
+            $("#show").click(function(){
+                $("#box3").slideDown(1000);
+            });
+
+            $("#hide").click(function(){
+                $("#box3").slideUp(1000);
+            });
+
+        });
+    </script>
+</body>
+</html>
